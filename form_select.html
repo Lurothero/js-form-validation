@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>list box test</title>
+<script language="javascript">
+function testselect(form) {
+    alert (form.list.selectedindex);
+}
+</script>
+</head>
+<body>
+	<form name="myform" action="" method="get">
+		<input type="button" name="button" value="test" onClick ="testselect(this.form)">
+		<select name="list" size="3">
+			<option>this is item 1</option>
+			<option>this is item 2</option>
+			<option>this is item 3</option>
+		</select>
+	</form>
+</body>
+</html>
