@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>onsubmit test</title>
+<script language="javascript">
+function mailme(form){
+    var subject = form.inputbox1.value;
+    var cc = form.inputbox2.value;
+    var bcc = form.inputbox3.value;
+    var location = "mailto:jwedit@javaworld.com?subject=" + subject + "&bcc=" + bcc + "&cc=" + cc;
+    return true;
+}
+</script>
+</head>
+<body>
+	<form name="testform" onSubmit="return mailme(this.form)" >subject of message: <br>
+		<input type="text" name="inputbox1" value="this is such a great form!" size=50>
+		<p>send cc to: <br>
+		<input type="text" name="inputbox2" value="" size=50><p>
+		send blind cc to: <br>
+		<input type="text" name="inputbox3" value="" size=50><p>
+		<input type="submit"><br>
+	</form>
+</body>
+</html>
