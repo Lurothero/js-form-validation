@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>test input</title>
+<script language="javascript">
+	function testresults (form)
+	 {
+    		var testvar = form.inputbox.value;
+    		alert ("you typed: " + testvar);
+	}
+</script>
+</head>
+<body>
+	<form name="myform" action="" method="get">enter something in the box: <br>
+		<input type="text" name="inputbox" value=""><p>
+		<input type="button" name="button" value="click" onClick="testresults(this.form)">
+	</form>
+</body>
+</html>
